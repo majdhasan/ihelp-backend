@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_multi_fields_languages",
+  "info": {
+    "name": "language",
+    "icon": "font"
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "string"
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "motherTongue",
+        "fluent",
+        "veryGood",
+        "basics"
+      ]
+    }
+  }
+}

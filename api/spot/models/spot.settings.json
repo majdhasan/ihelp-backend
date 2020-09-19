@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "spots",
+  "info": {
+    "name": "spot"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "search",
+        "offer"
+      ]
+    },
+    "creationDate": {
+      "type": "datetime"
+    },
+    "expirationDate": {
+      "type": "datetime"
+    },
+    "city": {
+      "type": "enumeration",
+      "enum": [
+        "Berlin",
+        "Muenchen",
+        "Rome",
+        "London",
+        "Koeln",
+        "Hamburg",
+        "Nazareth",
+        "Telaviv",
+        "Haifa"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "hashtags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "multi-fields.hashtag"
+    },
+    "bidders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "multi-fields.bidder"
+    },
+    "creator": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

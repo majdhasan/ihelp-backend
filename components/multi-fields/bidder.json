@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_multi_fields_bidders",
+  "info": {
+    "name": "bidder",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "bidder": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

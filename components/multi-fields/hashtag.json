@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_multi_fields_hashtags",
+  "info": {
+    "name": "hashtag",
+    "icon": "hashtag"
+  },
+  "options": {},
+  "attributes": {
+    "hashtag": {
+      "type": "string"
+    }
+  }
+}
